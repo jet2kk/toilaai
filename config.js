@@ -37,7 +37,7 @@ const config = {
 
         name                    : 'Music Disc',
         prefix                  : '3',                  // Text command prefix
-        status                  : 'online',             // 'online' | 'idle' | 'dnd'
+        status                  : 'idle',             // 'online' | 'idle' | 'dnd'
         activity: {
             type                : 0,                    // https://discord.com/developers/docs/topics/gateway-events#activity-object-activity-types
             name                : 'Pate Iu Em',
@@ -87,7 +87,7 @@ const config = {
     // Web dashboard settings
     webDashboard: {
         enabled                 : true,
-        port                    : 33333,
+        port                    : 8080,
         loginType               : 'USER',       // 'USER' | 'OAUTH2'
 
         // USER mode settings
@@ -99,7 +99,7 @@ const config = {
         // OAUTH2 mode settings
         oauth2: {
             link                : '',
-            redirectUri         : 'http://localhost:33333/login',
+            redirectUri         : 'http://localhost:8080/login',
         },
 
         // SessionManager config
